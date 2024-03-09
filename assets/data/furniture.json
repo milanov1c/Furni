@@ -1,104 +1,166 @@
-{
-  "furnitures": [
+[
     {
       "id": 1,
       "name": "Eames Lounge Chair",
-      "brand": "Herman Miller",
+      "brand": 1,
       "color": "Walnut/Black",
       "price": 4999.99,
       "date_added": "2023-05-15",
-      "category": "Chairs",
-      "image": "/assets/images/chair-3.jpg"
+      "category": 2,
+      "image": "/assets/images/chair-3.png"
     },
     {
       "id": 2,
       "name": "IKEA Billy Bookcase",
-      "brand": "IKEA",
+      "brand": 2,
       "color": "White",
       "price": 79.99,
       "date_added": "2023-02-10",
-      "category": "Bookcases",
-      "image": "/assets/images/chair.jpg"
+      "category": 3,
+      "image": "/assets/images/bookcase-1.jpg"
     },
     {
       "id": 3,
       "name": "West Elm Mid-Century Bed",
-      "brand": "West Elm",
+      "brand": 1,
       "color": "Acorn",
       "price": 1299.99,
       "date_added": "2023-08-20",
-      "category": "Beds",
-      "image": "/assets/images/chair.jpg"
+      "category": 4,
+      "image": "/assets/images/bed-1.jpg"
     },
     {
       "id": 4,
       "name": "Ashley Furniture Dining Table",
-      "brand": "Ashley Furniture",
+      "brand": 1,
       "color": "Espresso",
       "price": 599.99,
       "date_added": "2023-04-03",
-      "category": "Tables",
-      "image": "/assets/images/chair.jpg"
+      "category": 5,
+      "image": "/assets/images/table-1.jpg"
     },
     {
       "id": 5,
-      "name": "La-Z-Boy Recliner",
-      "brand": "La-Z-Boy",
-      "color": "Brown",
+      "name": "La-Z-Boy Bookcase",
+      "brand": 5,
+      "color": "White",
       "price": 899.99,
       "date_added": "2023-09-25",
-      "category": "Recliners",
-      "image": "/assets/images/chair-1.jpg"
+      "category": 3,
+      "image": "/assets/images/bookcase-2.jpg"
     },
     {
       "id": 6,
-      "name": "CB2 Lubi Sleeper Daybed",
-      "brand": "CB2",
-      "color": "Grey",
+      "name": "CB2 Lubi Sleeper Sofa",
+      "brand": 2,
+      "color": "Beige",
       "price": 1099.99,
       "date_added": "2023-06-12",
-      "category": "Daybeds",
-      "image": "/assets/images/chair.jpg"
+      "category": 1,
+      "image": "/assets/images/sofa-1.jpg"
     },
     {
       "id": 7,
       "name": "Pottery Barn Chesterfield Sofa",
-      "brand": "Pottery Barn",
-      "color": "Oatmeal",
+      "brand": 4,
+      "color": "Grey",
       "price": 2399.99,
       "date_added": "2023-07-19",
-      "category": "Sofas",
-      "image": "/assets/images/chair-2.jpg"
+      "category": 1,
+      "image": "/assets/images/sofa-2.jpg"
     },
     {
       "id": 8,
-      "name": "Wayfair Mirrored Nightstand",
-      "brand": "Wayfair",
+      "name": "Wayfair Table",
+      "brand": 3,
       "color": "Silver",
       "price": 199.99,
       "date_added": "2023-10-08",
-      "category": "Nightstands",
-      "image": "/assets/images/chair-1.jpg"
+      "category": 5,
+      "image": "/assets/images/table-2.jpg"
     },
     {
       "id": 9,
-      "name": "Crate & Barrel Bar Stool",
-      "brand": "Crate & Barrel",
+      "name": "Crate & Barrel Chair",
+      "brand": 2,
       "color": "Black",
       "price": 149.99,
       "date_added": "2023-11-30",
-      "category": "Stools",
-      "image": "/assets/images/chair-2.jpg"
+      "category": 2,
+      "image": "/assets/images/chair-2.png"
     },
     {
       "id": 10,
+      "name": "Wayfair Bookcase",
+      "brand": 3,
+      "color": "Grey",
+      "price": 2399.99,
+      "date_added": "2023-07-19",
+      "category": 3,
+      "image": "/assets/images/bookcase-3.jpg"
+    },
+    
+    {
+      "id": 11,
+      "name": "Pottery Barn Sofa",
+      "brand": 4,
+      "color": "Grey",
+      "price": 2399.99,
+      "date_added": "2023-07-19",
+      "category": 1,
+      "image": "/assets/images/sofa-3.jpg"
+    },
+    
+    {
+      "id": 12,
+      "name": "Pottery Barn Bed",
+      "brand": 4,
+      "color": "Grey",
+      "price": 2399.99,
+      "date_added": "2023-07-19",
+      "category": 4,
+      "image": "/assets/images/bed-2.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Pier 1 Imports Sleeping Bed",
+      "brand": 1,
+      "color": "Grey",
+      "price": 2399.99,
+      "date_added": "2023-07-19",
+      "category": 4,
+      "image": "/assets/images/bed-3.jpg"
+    },
+    
+    {
+      "id": 14,
       "name": "Pier 1 Imports Papasan Chair",
-      "brand": "Pier 1 Imports",
+      "brand": 1,
       "color": "Natural",
       "price": 199.99,
       "date_added": "2023-03-14",
-      "category": "Accent Chairs",
-      "image": "/assets/images/chair-3.jpg"
+      "category": 2,
+      "image": "/assets/images/chair-1.png"
+    },
+    {
+      "id": 15,
+      "name": "Wayfair Evening Chair",
+      "brand": 3,
+      "color": "Grey",
+      "price": 2399.99,
+      "date_added": "2023-07-19",
+      "category": 2,
+      "image": "/assets/images/chair-4.png"
+    },
+    {
+      "id": 16,
+      "name": "Wayfair Evening Sofa",
+      "brand": 3,
+      "color": "Grey",
+      "price": 2399.99,
+      "date_added": "2023-07-19",
+      "category": 1,
+      "image": "/assets/images/sofa-4.png"
     }
   ]
-}
+

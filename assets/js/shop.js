@@ -1,34 +1,80 @@
 window.onload = function () {
-  fetchData();
+  //fetchData();
+  getJSONData("GET", "assets/data/furniture.json", function(response){
+    displayProducts(response);
+    saveToLS("products",response);
+  });
+  getJSONData("GET","assets/data/brands.json", function(response){
+    displayCategories(response, "#brandDDL");
+    saveToLS("brands",response);
+  });
+  getJSONData("GET","assets/data/categories.json", function(response){
+    displayCategories(response, "#typeDDL");
+    saveToLS("categories",response);
+  });
+  getJSONData("GET","assets/data/sort.json", function(response){
+    displayCategories(response, "#sortDDL");
+    saveToLS("sort",response);
+  });
+  document.querySelector("#brandDDL").addEventListener("change", function(){
+    filterChange();
+  });
+  document.querySelector("#typeDDL").addEventListener("change", function(){
+    filterChange();
+  });
 };
 
-function fetchData() {
-  getJSONData("GET", "assets/data/furniture.json", function (response) {
-    const furnitureBox = document.querySelector("#furniture");
+function saveToLS(name, value){
+  localStorage.setItem(name, JSON.stringify(value));
+}
 
-    response.furnitures.forEach((furniture) => {
-      const html = `
-      <div class="col-12 col-md-4 col-lg-3 mb-5">
-						<a class="product-item" href="#">
-							<img src="${furniture.image}" alt="${
-        furniture.name
-      }" class="img-fluid product-thumbnail">
-							<h3 class="product-title">${furniture.name}</h3>
-							<strong class="product-price">$ ${furniture.price.toFixed(2)}</strong>
+function returnFromLS(name){
+  return JSON.parse(localStorage.getItem(name));
+}
 
-                <span class="icon-cross" data-id=${furniture.id}  data-name="${
-        furniture.name
-      }" data-price=${furniture.price} data-image="${furniture.image}">
-                  <img src="images/cross.svg" class="img-fluid add-to-cart">
-                </span>
-							
-						</a>
-					</div> 
-          `;
 
-      furnitureBox.innerHTML += html;
-    });
-  });
+
+
+
+
+function filterProducts(products, filterType){
+  let filteredProducts=[];
+  let categoryID=null;
+  let filterProperty=null;
+
+  if(filterType=="brands")
+  {
+      categoryID=document.querySelector("#brandDDL").value;
+      filterProperty="brand";
+      console.log(document.querySelector("#brandDDL").value)
+  }
+  if(filterType=="category")
+  {
+      categoryID=document.querySelector("#typeDDL").value;
+      filterProperty="category";
+      console.log(document.querySelector("#typeDDL").value)
+  }
+
+  if(categoryID=="0")
+  {
+      filteredProducts=products;
+  }
+  else{
+      filteredProducts=products.filter(product=> product[filterProperty]==categoryID);
+  }
+
+  
+  return filteredProducts;
+
+}
+
+function filterChange(){
+  let products=returnFromLS("products");
+
+  products=filterProducts(products, "brands");
+  products=filterProducts(products, "category");
+
+  displayProducts(products, "products");
 }
 
 function getJSONData(method, url, callback) {
@@ -44,4 +90,39 @@ function getJSONData(method, url, callback) {
     }
   };
 
+}
+function displayCategories(categoriesObj, displayBlock){
+  const block=document.querySelector(displayBlock);
+  let html=``;
+  categoriesObj.forEach(cat=> {
+    html+=`<option value="${cat.id}">${cat.name}</option>`;
+  });
+  block.innerHTML+=html;
+}
+
+function displayProducts(productsObj){
+  const furnitureBlock = document.querySelector("#furniture");
+  let html=``;
+  productsObj.forEach(prod=>{
+    html+= `
+  <div class="col-12 col-md-4 col-lg-3 mb-5">
+        <a class="product-item" href="#">
+          <img src="${prod.image}" alt="${
+    prod.name
+  }" class="img-fluid product-thumbnail">
+          <h3 class="product-title">${prod.name}</h3>
+          <strong class="product-price">$ ${prod.price.toFixed(2)}</strong>
+
+            <span class="icon-cross" data-id=${prod.id}  data-name="${
+              prod.name
+  }" data-price=${prod.price} data-image="${prod.image}">
+              <img src="images/cross.svg" class="img-fluid add-to-cart">
+            </span>
+          
+        </a>
+      </div> 
+      `
+  });
+  
+  furnitureBlock.innerHTML=html;
 }

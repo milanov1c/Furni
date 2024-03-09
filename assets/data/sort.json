@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name":"Name A-Z",
+        "value":"name-asc"
+    },
+    {
+        "id":2,
+        "name":"Name Z-A",
+        "value":"name-desc"
+    },
+    {
+        "id":3,
+        "name":"Price Ascending",
+        "value":"price-asc"
+    },
+    {
+        "id":4,
+        "name":"Price Descending",
+        "value":"price-desc"
+    }
+]

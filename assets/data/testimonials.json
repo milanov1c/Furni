@@ -1,0 +1,31 @@
+[
+    {
+        "id":1,
+        "picture":"person_1.jpg",
+        "name":"Ethan Turner",
+        "testimonial":"Furni has been my go-to furniture store for years now. I recently purchased a stunning leather sofa and coffee table for my living room, and I couldn't be happier with the quality. The attention to detail and craftsmanship is impeccable. The staff at Furni were incredibly helpful in guiding me through the selection process, making my experience seamless. I highly recommend Furni to anyone in search of high-quality, stylish furniture.",
+        "occupation":"Software Engineer"
+    },
+    {
+        "id":2,
+        "picture":"person_4.jpg",
+        "name":"Olivia Bennett",
+        "testimonial":"Furni is a hidden gem for finding unique and elegant furniture pieces. I was looking for a statement piece for my bedroom, and Furni had the perfect blend of modern and classic styles. The wide range of options allowed me to find something that matched my taste perfectly. The delivery was prompt, and the assembly service made the whole experience hassle-free. I love how Furni has elevated the look and feel of my home!",
+        "occupation":"Interior Designer"
+    },
+    {
+        "id":3,
+        "picture":"person_3.jpg",
+        "name":"Sebastian Ramirez",
+        "testimonial":"I recently moved into a new apartment and needed to furnish the entire space. Furni made the process so much easier with their diverse selection and affordable prices. The customer service was exceptional, with the staff offering valuable insights into combining different pieces for a cohesive look. I was able to furnish my entire place without breaking the bank, and the quality of the furniture exceeded my expectations. I'm a happy and satisfied customer!.",
+        "occupation":"Marketing Specialist"
+    },
+    {
+        "id":4,
+        "picture":"person-1.jpg",
+        "name":"Lily Anderson",
+        "testimonial":"Furni is my one-stop-shop for all things furniture! I have been a loyal customer for years, and every purchase has been a delight. From contemporary dining sets to cozy bedroom furniture, Furni has it all. The durability and style of their pieces are unmatched, and the friendly staff always make me feel welcome. I recently recommended Furni to my friends, and they too have become loyal customers. Trust me, you won't be disappointed!",
+        "occupation":"Event Planner"
+    }
+    
+]

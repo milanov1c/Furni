@@ -1,0 +1,22 @@
+[
+    {
+        "id":1,
+        "name":"Herman Miller"
+    },
+    {
+        "id":2,
+        "name":"IKEA"
+    },
+    {
+        "id":3,
+        "name":"Wayfair"
+    },
+    {
+        "id":4,
+        "name":"Pottery Barn"
+    },
+    {
+        "id":5,
+        "name":"La-Z-Boy"
+    }
+]

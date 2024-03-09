@@ -1,0 +1,37 @@
+[
+    {
+        "id":1,
+        "path":"index.html",
+        "name":"Home"
+    },
+    {
+        "id":2,
+        "path":"shop.html",
+        "name":"Shop"
+    },
+    {
+        "id":3,
+        "path":"about.html",
+        "name":"About Us"
+    },
+    {
+        "id":4,
+        "path":"services.html",
+        "name":"Services"
+    },
+    {
+        "id":5,
+        "path":"blog.html",
+        "name":"Blog"
+    },
+    {
+        "id":6,
+        "path":"contact.html",
+        "name":"Contact Us"
+    },
+    {
+        "id":7,
+        "path":"author.html",
+        "name":"Author"
+    }
+]

@@ -1,0 +1,53 @@
+[
+    {
+        "id":1,
+        "image":{
+            "src":"post-1.jpg",
+            "alt":"Post 1"
+        },
+        "author":{
+            "fName":"Kristin",
+            "lName":"Watson"
+        },
+        "title":"First Time Home Owner Ideas",
+        "date":{
+            "day":19,
+            "month":12,
+            "year":2021
+        }
+    },
+    {
+        "id":2,
+        "image":{
+            "src":"post-2.jpg",
+            "alt":"Post 2"
+        },
+        "author":{
+            "fName":"Robert",
+            "lName":"Fox"
+        },
+        "title":"How To Keep Your Furniture Clean",
+        "date":{
+            "day":19,
+            "month":12,
+            "year":2021
+        }
+    },
+    {
+        "id":3,
+        "image":{
+            "src":"post-3.jpg",
+            "alt":"Post 3"
+        },
+        "author":{
+            "fName":"Kristin",
+            "lName":"Watson"
+        },
+        "title":"Small Space Furniture Apartment Ideas",
+        "date":{
+            "day":12,
+            "month":12,
+            "year":2021
+        }
+    }
+]

@@ -1,0 +1,40 @@
+[
+    {
+        "id":1,
+        "icon":
+        {
+            "src":"truck.svg",
+            "alt":"Truck"
+        },
+        "heading":"Fast &amp; Free Shipping",
+        "paragraph":" Effortlessly transport your furniture with our reliable and efficient delivery service."
+    },
+    {
+        "id":2,
+        "icon":{
+            "src":"bag.svg",
+            "alt":"Bag"
+        },
+        "heading":"Easy to shop",
+        "paragraph":"Experience the convenience of swift and complimentary shipping for a seamless shopping experience."
+    },
+    {
+        "id":3,
+        "icon":{
+            "src":"support.svg",
+            "alt":"Support"
+        },
+        "heading":"Support",
+        "paragraph":"Shop with ease and convenience, making your Furni experience a breeze."
+    },
+    {
+        "id":4,
+        "icon":{
+            "src":"return.svg",
+            "alt":"Return"
+        },
+        "heading":"Hassle Free Returns",
+        "paragraph":" Experience stress-free returns with our hassle-free process, ensuring customer satisfaction is our top priority."
+    }
+    
+]

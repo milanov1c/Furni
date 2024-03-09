@@ -1,0 +1,54 @@
+[
+    {
+        "id":1,
+        "name":{
+            "fName":"Lawson",
+            "lName":"Arnold"
+        },
+        "position":"Design Maestro",
+        "about":"Armed with a degree in Industrial Design and a passion for creative expression, he transforms spaces into captivating works of art. ",
+        "image":{
+            "src":"person_1.jpg",
+            "alt":"Lawson"
+        }
+    },
+    {
+        "id":2,
+        "name":{
+            "fName":"Jeremy",
+            "lName":"Walker"
+        },
+        "position":"Customer Experience Guru",
+        "about":"When you walk into Furni, you'll be greeted by Jeremy, the warm and approachable face of our customer experience team. ",
+        "image":{
+            "src":"person_2.jpg",
+            "alt":"Jeremy"
+        }
+    },
+    {
+        "id":3,
+        "name":{
+            "fName":"Patrick",
+            "lName":"White"
+        },
+        "position":"Logistics Dynamo",
+        "about":"Behind the scenes, Patrick is the logistical powerhouse ensuring that Furni operates seamlessly. ",
+        "image":{
+            "src":"person_3.jpg",
+            "alt":"Patrick"
+        }
+    },
+    {
+        "id":4,
+        "name":{
+            "fName":"Kathryn",
+            "lName":"Ryan"
+        },
+        "position":"Digital Maven",
+        "about":"Kathryn is the tech-savvy mind responsible for Furni's online presence.",
+        "image":{
+            "src":"person_4.jpg",
+            "alt":"Kathryn"
+        }
+    }
+]

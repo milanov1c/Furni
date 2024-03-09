@@ -21,7 +21,7 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
-		<title>Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites by Untree.co </title>
+		<title>Furni - SHOP </title>
 	</head>
 
 	<body>
@@ -37,15 +37,8 @@
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbarsFurni">
-					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item ">
-							<a class="nav-link" href="index.html">Home</a>
-						</li>
-						<li class="active"><a class="nav-link" href="shop.html">Shop</a></li>
-						<li><a class="nav-link" href="about.html">About us</a></li>
-						<li><a class="nav-link" href="services.html">Services</a></li>
-						<li><a class="nav-link" href="blog.html">Blog</a></li>
-						<li><a class="nav-link" href="contact.html">Contact us</a></li>
+					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0" id="myNav">
+						
 					</ul>
 
 					<ul class="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
@@ -60,6 +53,7 @@
 
 		<!-- Start Hero Section -->
 			<div class="hero">
+			
 				<div class="container">
 					<div class="row justify-content-between">
 						<div class="col-lg-5">
@@ -70,6 +64,7 @@
 						<div class="col-lg-7">
 							
 						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -78,7 +73,33 @@
 		
 
 		<div class="untree_co-section product-section before-footer-section">
+			<div class="container mb-5">
+				<div class="row" id="categories">
+					<div class="col-4">
+						<select name="brandDDL" id="brandDDL" class="form-control">
+							<option value="0">
+								Choose brand..
+							</option>
+						</select>
+					</div>
+					<div class="col-4">
+						<select name="typeDDL" id="typeDDL" class="form-control">
+							<option value="0">
+								Choose type..
+							</option>
+						</select>
+					</div>
+					<div class="col-4">
+						<select name="sortDDL" id="sortDDL" class="form-control">
+							<option value="0">
+								Sort by..
+							</option>
+						</select>
+					</div>
+				</div>
+			</div>
 		    <div class="container">
+				
 		      	<div class="row" id="furniture">
 
 		      	</div>
@@ -101,10 +122,12 @@
 
 							<form action="#" class="row g-3">
 								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="Enter your name">
+									<input type="text" class="form-control" placeholder="Enter your name" id="indexName"/>
+									<small class="text-danger d-none">Your name is invalid format. Please enter it again. Example: Nikolina</small>
 								</div>
 								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="Enter your email">
+									<input type="email" class="form-control" placeholder="Enter your email" id="indexEmail"/>
+									<small class="text-danger d-none">Your email is invalid format. Please enter it again. Example: nikolina@mail.com</small>
 								</div>
 								<div class="col-auto">
 									<button class="btn btn-primary">
@@ -120,7 +143,7 @@
 				<div class="row g-5 mb-5">
 					<div class="col-lg-4">
 						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
-						<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+						<p class="mb-4">Whether you're revamping your living room, bedroom, kitchen, or office, our team of skilled designers is here to craft bespoke solutions. We specialize in creating interiors that seamlessly blend form and function, ensuring each space is not only visually stunning but also tailored to your lifestyle.</p>
 
 						<ul class="list-unstyled custom-social">
 							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
@@ -195,8 +218,10 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
+		<script src="assets/js/contact.js"></script>
 		<script src="assets/js/shop.js"></script>
 		<script src="assets/js/add-cart.js"></script>
+		<script src="assets/js/main.js"></script>
 	</body>
 
 </html>
