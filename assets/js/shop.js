@@ -22,6 +22,9 @@ window.onload = function () {
   document.querySelector("#typeDDL").addEventListener("change", function(){
     filterChange();
   });
+  document.querySelector("#sortDDL").addEventListener("change", function(){
+    filterChange();
+  });
 };
 
 function saveToLS(name, value){
@@ -46,13 +49,13 @@ function filterProducts(products, filterType){
   {
       categoryID=document.querySelector("#brandDDL").value;
       filterProperty="brand";
-      console.log(document.querySelector("#brandDDL").value)
+      //console.log(document.querySelector("#brandDDL").value)
   }
   if(filterType=="category")
   {
       categoryID=document.querySelector("#typeDDL").value;
       filterProperty="category";
-      console.log(document.querySelector("#typeDDL").value)
+      //console.log(document.querySelector("#typeDDL").value)
   }
 
   if(categoryID=="0")
@@ -68,11 +71,51 @@ function filterProducts(products, filterType){
 
 }
 
+function sortProducts(products){
+  let sortValue=document.querySelector("#sortDDL").value;
+  let sortedProducts=[];
+  console.log(sortValue)
+  if(sortValue==="0"){
+    return products;
+  }else{
+    sortedProducts=products.sort((first, second)=>{
+      if(sortValue==="3"){
+        return first.price - second.price;
+        
+      }
+      if(sortValue==="4"){
+        return second.price - first.price;
+      }
+      if(sortValue==="1"){
+        if(first.name < second.name){
+          return -1;
+        }else if(first.name > second.name){
+          return 1;
+        }else{
+          return 0;
+        }
+      }
+      if(sortValue==="2"){
+        if(first.name < second.name){
+          return 1;
+        }else if(first.name > second.name){
+          return -1;
+        }else{
+          return 0;
+        }
+      }
+    });
+  }
+  return sortedProducts;
+}
+
+
 function filterChange(){
   let products=returnFromLS("products");
 
   products=filterProducts(products, "brands");
   products=filterProducts(products, "category");
+  products=sortProducts(products);
 
   displayProducts(products, "products");
 }

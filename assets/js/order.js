@@ -116,7 +116,10 @@ function decreaseCount(id) {
     return;
   }
 
-  item.count = item.count - 1;
+  if(item.count>1){
+    item.count = item.count - 1;
+  }
+  
 
   saveUpdatedItem(index, item);
   updateQuantityAndTotalPriceInTable(id, item);

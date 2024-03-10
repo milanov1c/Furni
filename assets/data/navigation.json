@@ -29,5 +29,10 @@
         "id":6,
         "path":"author.html",
         "name":"Author"
+    },
+    {
+        "id":7,
+        "path":"dokumentacija.pdf",
+        "name":"Documentation"
     }
 ]
