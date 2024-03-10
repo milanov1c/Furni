@@ -150,7 +150,7 @@
       "price": 2399.99,
       "date_added": "2023-07-19",
       "category": 2,
-      "image": "/assets/images/chair-4.png"
+      "image": "assets/images/chair-4.png"
     },
     {
       "id": 16,
@@ -160,7 +160,7 @@
       "price": 2399.99,
       "date_added": "2023-07-19",
       "category": 1,
-      "image": "/assets/images/sofa-4.png"
+      "image": "assets/images/sofa-4.png"
     }
   ]
 
