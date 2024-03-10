@@ -5,10 +5,10 @@ window.onload = function () {
 function displayOrderForCheckout() {
   let items = getLocalStorageItems();
 
-  if (items.length === 0) {
-    document.querySelector("#place-order-button").style.display = "none";
-    return;
-  }
+  // if (items.length === 0) {
+  //   document.querySelector("#place-order-button").style.display = "none";
+  //   return;
+  // }
 
   const orderItems = document.querySelector("#order-items");
   var html = ``;
@@ -45,5 +45,5 @@ function getLocalStorageItems() {
 
 function placeOrder() {
   localStorage.removeItem("cart");
-  window.location = "thankyou.html";
+  
 }

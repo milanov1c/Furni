@@ -19,18 +19,14 @@
         "path":"services.html",
         "name":"Services"
     },
+    
     {
         "id":5,
-        "path":"blog.html",
-        "name":"Blog"
-    },
-    {
-        "id":6,
         "path":"contact.html",
         "name":"Contact Us"
     },
     {
-        "id":7,
+        "id":6,
         "path":"author.html",
         "name":"Author"
     }

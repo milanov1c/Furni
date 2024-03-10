@@ -64,7 +64,7 @@
 						</div>
 						<div class="col-lg-7">
 							<div class="hero-img-wrap">
-								<img src="images/couch.png" class="img-fluid">
+								<img src="images/sofa.png" class="img-fluid">
 							</div>
 						</div>
 					</div>
@@ -93,7 +93,7 @@
                       </svg>
                     </div> <!-- /.icon -->
                     <div class="service-contents">
-                      <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+                      <p>Zdravka Čelara, 16</p>
                     </div> <!-- /.service-contents-->
                   </div> <!-- /.service -->
                 </div>
@@ -106,7 +106,7 @@
                       </svg>
                     </div> <!-- /.icon -->
                     <div class="service-contents">
-                      <p>info@yourdomain.com</p>
+                      <p>furni@mail.com</p>
                     </div> <!-- /.service-contents-->
                   </div> <!-- /.service -->
                 </div>
@@ -119,7 +119,7 @@
                       </svg>
                     </div> <!-- /.icon -->
                     <div class="service-contents">
-                      <p>+1 294 3925 3939</p>
+                      <p>+381 60 000 000</p>
                     </div> <!-- /.service-contents-->
                   </div> <!-- /.service -->
                 </div>
@@ -131,18 +131,21 @@
                     <div class="form-group">
                       <label class="text-black" for="fname">First name</label>
                       <input type="text" class="form-control" id="fname">
+					  <small class="text-danger d-none">Your name is invalid format. Please enter it again. Example: Nikolina</small>
                     </div>
                   </div>
                   <div class="col-6">
                     <div class="form-group">
                       <label class="text-black" for="lname">Last name</label>
                       <input type="text" class="form-control" id="lname">
+					  <small class="text-danger d-none">Your surname is invalid format. Please enter it again. Example: Milanović</small>
                     </div>
                   </div>
                 </div>
                 <div class="form-group">
                   <label class="text-black" for="email">Email address</label>
                   <input type="email" class="form-control" id="email">
+				  <small class="text-danger d-none">Your name is invalid format. Please enter it again. Example: nikolina@mail.com</small>
                 </div>
 
                 <div class="form-group mb-5">
@@ -184,10 +187,12 @@
 
 							<form action="#" class="row g-3">
 								<div class="col-auto">
-									<input type="text" class="form-control" placeholder="Enter your name">
+									<input type="text" class="form-control" placeholder="Enter your name" id="indexName"/>
+									<small class="text-danger d-none">Your name is invalid format. Please enter it again. Example: Nikolina</small>
 								</div>
 								<div class="col-auto">
-									<input type="email" class="form-control" placeholder="Enter your email">
+									<input type="email" class="form-control" placeholder="Enter your email" id="indexEmail"/>
+									<small class="text-danger d-none">Your email is invalid format. Please enter it again. Example: nikolina@mail.com</small>
 								</div>
 								<div class="col-auto">
 									<button class="btn btn-primary">
@@ -203,7 +208,7 @@
 				<div class="row g-5 mb-5">
 					<div class="col-lg-4">
 						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Furni<span>.</span></a></div>
-						<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+						<p class="mb-4">Whether you're revamping your living room, bedroom, kitchen, or office, our team of skilled designers is here to craft bespoke solutions. We specialize in creating interiors that seamlessly blend form and function, ensuring each space is not only visually stunning but also tailored to your lifestyle.</p>
 
 						<ul class="list-unstyled custom-social">
 							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
@@ -278,6 +283,7 @@
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/tiny-slider.js"></script>
 		<script src="js/custom.js"></script>
+		<script src="assets/js/contact.js"></script>
 		<script src="assets/js/main.js"></script>
 	</body>
 
