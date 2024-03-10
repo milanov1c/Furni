@@ -1,4 +1,4 @@
-const prefixHref="/Furni";
+var prefixHref="/Furni";
 
 getJSONData("GET", "assets/data/navigation.json", function(result){
     displayNav(result);
